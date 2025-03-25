@@ -13,9 +13,6 @@ export default function DescriptionList() {
                             <Language key={`language-${language.id}`} title={language.title}
                                 inShow={inShow === language.id}
                                 showHandler={() => setInShow(inShow === language.id ? null : language.id)}>
-                                <div>
-                                    {language.content}
-                                </div>
                             </Language>
                         )
                     })
