@@ -23,6 +23,10 @@ h1{
         border: 2px solid lightblue;
         border-radius: 10px;
     }
+    .active{
+        background-color: yellow;
+        color: black;
+    }
 }
 .displayer{
     margin-top: 2rem;

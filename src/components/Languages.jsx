@@ -1,8 +1,7 @@
-export default function Language({ title, children, inShow, showHandler }) {
+export default function Language({ title, inShow, showHandler, languageId }) {
     return (
         <>
-            <button type='button' onClick={showHandler}>{title}</button>
-
+            <button className={inShow === true ? "active" : ""} type='button' onClick={showHandler}>{title}</button>
         </>
     )
 }
