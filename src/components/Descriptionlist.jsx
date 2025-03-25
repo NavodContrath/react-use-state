@@ -1,5 +1,6 @@
 import languages from "./data/language-list";
 import Language from "./Languages";
+import Displayer from "./Displayer";
 import { useState } from 'react'
 
 export default function DescriptionList() {
