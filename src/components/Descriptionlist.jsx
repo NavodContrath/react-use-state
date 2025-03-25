@@ -18,10 +18,8 @@ export default function DescriptionList() {
                     })
                 }
             </div>
-            {inShow ? (<div className="displayer">
-                <h3>{languages.find(lang => lang.id === inShow).title}</h3>
-                {languages.find(lang => lang.id === inShow).content}
-            </div>) : (<p className="displayer">Select a language</p>)}
+            <Displayer inShow={inShow} languages={languages} />
+
         </>
     )
 }
