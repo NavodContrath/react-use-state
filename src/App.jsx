@@ -21,5 +21,23 @@ function Descriptions() {
   )
 }
 function DescriptionList() {
+  const [inShow, setInShow] = useState(1)
+  return (
+    <div>
+      {
+        languages.map((language) => {
+          return (
+            <Language />
+          )
+        })
+      }
+    </div>
+  )
 }
+function Language() {
+  return (
+    <></>
+  )
+}
+
 export default App
