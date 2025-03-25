@@ -7,35 +7,19 @@ function App() {
 
   return (
     <>
-      <Description />
+      <Descriptions />
     </>
   )
 }
-function Description() {
+function Descriptions() {
   return (
     <div className="container">
       <h1>Learn Web Development</h1>
-      <ButtonList />
-
-      <div className="displayer">
-        <h3></h3>
-        <p></p>
-      </div>
+      <DescriptionList />
     </div>
 
   )
 }
-function ButtonList() {
-  return (
-    <div>
-      {
-        languages.map((language) => {
-          return (
-            <button type='button' key={`language-${language.id}`}>{language.title}</button>
-          )
-        })
-      }
-    </div>
-  )
+function DescriptionList() {
 }
 export default App
