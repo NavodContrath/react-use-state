@@ -10,12 +10,21 @@ export default function DescriptionList() {
                 {
                     languages.map((language) => {
                         return (
-                            <Language >
+                            <Language key={`language-${language.id}`} title={language.title}
+                                inShow={inShow === language.id}
+                                showHandler={() => setInShow(inShow === language.id ? null : language.id)}>
+                                <div>
+                                    {language.content}
+                                </div>
                             </Language>
                         )
                     })
                 }
             </div>
+            {inShow ? (<div className="displayer">
+                <h3>{languages.find(lang => lang.id === inShow).title}</h3>
+                {languages.find(lang => lang.id === inShow).content}
+            </div>) : (<p className="displayer">Select a language</p>)}
         </>
     )
 }
