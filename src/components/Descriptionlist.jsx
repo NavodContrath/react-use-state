@@ -4,7 +4,8 @@ import Displayer from "./Displayer";
 import { useState } from 'react'
 
 export default function DescriptionList() {
-    const [inShow, setInShow] = useState(languages[0].id)
+    const [inShow, setInShow] = useState(1)
+
 
     return (
         <>
