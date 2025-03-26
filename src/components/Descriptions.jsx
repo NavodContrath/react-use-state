@@ -4,8 +4,12 @@ export default function Descriptions() {
     return (
         <div className="container">
             <div className="card">
-                <h1>Learn Web Development</h1>
-                <DescriptionList />
+                <div className="card-head">
+                    <h1>Learn Web Development</h1>
+                </div>
+                <div className="card-body">
+                    <DescriptionList />
+                </div>
 
             </div>
         </div>
