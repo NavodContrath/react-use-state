@@ -16,7 +16,9 @@ export default function DescriptionList() {
                                 showHandler={() => setInShow(inShow === language.id ? null : language.id)}>
                             </Language>
                         )
+
                     })
+
                 }
             </div>
             <Displayer inShow={inShow} languages={languages} />

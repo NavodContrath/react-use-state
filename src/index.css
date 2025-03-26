@@ -2,16 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
+/* utilities */
 .container{
     width: 100%;
     max-width: 976px;
+    height: 100vh;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card{
+    background-color: rgba(234, 234, 234, 0.675);   
+    border-radius: 10px;
+    box-shadow: 5px 5px  rgba(234, 234, 234, 0.675);
+    padding: 2rem;
 }
 h1{
     text-align: center;
     margin: 2rem auto;
+    color: blue;
 }
+.danger{
+    background-color: red;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+/* css */
 .flex-container{
     display: flex;
     justify-content: center;
@@ -27,6 +47,7 @@ h1{
         background-color: yellow;
         color: black;
     }
+   
 }
 .displayer{
     margin-top: 2rem;
@@ -35,5 +56,8 @@ h1{
     h3{
         text-align: center;
         margin-bottom: 1rem;
+    }
+    p{
+        text-align: center;
     }
 }
