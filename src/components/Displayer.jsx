@@ -1,7 +1,9 @@
-export default function Displayer({ inShow, languages }) {
+export default function Displayer({ inShow, languages, }) {
     const selectedLanguage = languages.find(lang => lang.id === inShow)
+
     return (
         <div>
+
             {inShow ? (
                 <div className="displayer">
                     <h3>{selectedLanguage.title}</h3>
